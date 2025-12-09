@@ -264,7 +264,7 @@ class EMP:
             # ラプラシアンフィルタ
             emy.image = pg.transform.laplacian(emy.image)
 
-        # --- 爆弾を無効化 ---
+        # 爆弾を無効化
         for bomb in self.bombs:
             bomb.speed *= 0.5
             bomb.state = "inactive"
